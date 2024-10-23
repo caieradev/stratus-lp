@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'stoner-light';
+  src: url('/fonts/stoner-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -25,7 +32,13 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   color: var(--custom-gray);
   background: var(--background);
   font-family: 'stoner-regular', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
