@@ -16,6 +16,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'stoner-extra-bold';
+  src: url('/fonts/stoner-extra-bold.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stoner-heavy';
+  src: url('/fonts/stoner-heavy.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
