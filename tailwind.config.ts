@@ -111,7 +111,7 @@ export default {
 				'gradient-x': 'gradient-x 15s ease infinite',
 			},
 			backgroundImage: {
-				'hero-pattern': 'url("/public/lovable-uploads/f9f6c23a-12aa-45f1-8e4f-f68c21e9778d.png")',
+				'hero-pattern': 'url("https://stratus.dev.br/stratus.svg")',
 				'gradient-primary': 'linear-gradient(90deg, #6633FF 0%, #77C4D2 100%)',
 				'gradient-dark': 'linear-gradient(180deg, #0D0E12 0%, #16171E 100%)',
 			},

@@ -66,8 +66,8 @@ const AboutUs = () => {
                 src="/notebook.jpeg" 
                 alt="Desenvolvimento tecnológico" 
                 className="w-full h-full object-cover rounded-lg"
-                width={1000}
-                height={1000}
+                width={100}
+                height={100}
               />
               
               {/* Stats overlay */}

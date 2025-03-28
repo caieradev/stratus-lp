@@ -151,11 +151,11 @@ export default function RootLayout({
         <meta property="og:title" content="Stratus | Soluções Digitais" />
         <meta property="og:description" content="A Stratus entrega soluções rápidas e confiáveis em backend, integrações, automações e consultorias, além de landing pages. Projetamos sistemas escaláveis com tecnologia de ponta e foco total em performance." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        <meta property="og:image" content="./stratus.svg" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@stratus_tech" />
-        <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+        <meta name="twitter:image" content="https://stratus.dev.br/stratus.svg" />
       </head>
       <body className={`${stoner.variable} font-sans antialiased`}>
         <Toaster />
