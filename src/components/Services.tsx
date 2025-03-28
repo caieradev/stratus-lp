@@ -1,32 +1,32 @@
 'use client';
 
-import { Code, Database, Link, Settings, FileSearch, BarChart3, Workflow, ArrowRight } from "lucide-react";
+import { Code, Database, Link, Settings, FileSearch, BarChart3, Workflow, ArrowRight, Bot } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
+  {
+    icon: <Bot className="h-10 w-10 text-primary" />,
+    title: "Inteligência Artificial",
+    description: "Desenvolvemos soluções com IA para automatizar processos, analisar dados e criar experiências inteligentes",
+    keywords: ["IA", "inteligência artificial", "machine learning", "automação inteligente", "análise de dados"]
+  },
+  {
+    icon: <Code className="h-10 w-10 text-primary" />,
+    title: "Desenvolvimento Frontend",
+    description: "Criamos interfaces modernas e responsivas, para impulsionar sua presença digital com tecnologias de ponta",
+    keywords: ["landing page", "website", "UI/UX", "interfaces responsivas", "dashboards"]
+  },
+  {
+    icon: <Database className="h-10 w-10 text-primary" />,
+    title: "Backend sob Medida",
+    description: "Desenvolvimento personalizado de servidores, APIs e serviços para atender necessidades específicas",
+    keywords: ["desenvolvimento backend", "cloud computing", "sistemas escaláveis", "performance", "API Gateway"]
+  },
   {
     icon: <Link className="h-10 w-10 text-primary" />,
     title: "Integrações e APIs",
     description: "Conecte seus sistemas e aplicações com soluções de integração eficientes e seguras",
     keywords: ["integrações de sistemas", "API REST", "webhooks", "microserviços"]
-  },
-  {
-    icon: <Workflow className="h-10 w-10 text-primary" />,
-    title: "Gateways e Barramentos",
-    description: "Implemente arquiteturas modernas para comunicação entre sistemas e gerenciamento de dados",
-    keywords: ["ESB", "API Gateway", "message broker", "sistemas distribuídos"]
-  },
-  {
-    icon: <Code className="h-10 w-10 text-primary" />,
-    title: "Backend sob Medida",
-    description: "Desenvolvimento personalizado de servidores, APIs e serviços para atender necessidades específicas",
-    keywords: ["desenvolvimento backend", "cloud computing", "sistemas escaláveis", "performance"]
-  },
-  {
-    icon: <Database className="h-10 w-10 text-primary" />,
-    title: "Arquitetura de Sistemas",
-    description: "Projete sistemas robustos e escaláveis com bancos de dados otimizados para seu negócio",
-    keywords: ["arquitetura de software", "modelagem de dados", "sistemas legados", "cloud-native"]
   },
   {
     icon: <Settings className="h-10 w-10 text-primary" />,
@@ -39,12 +39,6 @@ const services = [
     title: "Consultorias Técnicas",
     description: "Análise, diagnóstico e planejamento de soluções tecnológicas alinhadas ao seu negócio",
     keywords: ["consultoria em tecnologia", "levantamento de requisitos", "planejamento técnico", "modernização"]
-  },
-  {
-    icon: <BarChart3 className="h-10 w-10 text-primary" />,
-    title: "Dashboards e Protótipos",
-    description: "Visualize dados e teste conceitos com interfaces intuitivas e eficientes",
-    keywords: ["landing page", "dashboards", "protótipos funcionais", "data visualization"]
   }
 ];
 

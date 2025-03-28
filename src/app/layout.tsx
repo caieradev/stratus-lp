@@ -53,16 +53,16 @@ export const metadata: Metadata = {
     template: "%s | Stratus",
   },
   description:
-    "A Stratus entrega soluções rápidas e confiáveis em backend, integrações, automações e consultorias, além de landing pages. Projetamos sistemas escaláveis com tecnologia de ponta e foco total em performance.",
+    "A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais.",
   keywords:
-    "landing page, desenvolvimento backend, integrações de sistemas, automações inteligentes, consultoria em tecnologia, projetos com IA, sistemas legados, soluções digitais sob medida",
+    "IA, inteligência artificial, landing page, landing pages, site, website, desenvolvimento web, frontend, react, next.js, interfaces responsivas, UI/UX, desenvolvimento backend, integrações de sistemas, automações inteligentes, consultoria em tecnologia, projetos com IA, sistemas legados, soluções digitais sob medida",
   authors: [{ name: "Stratus Soluções Digitais" }],
   creator: "Stratus Soluções Digitais",
   publisher: "Stratus Soluções Digitais",
   openGraph: {
     title: "Stratus | Soluções Digitais",
     description:
-      "A Stratus entrega soluções rápidas e confiáveis em backend, integrações, automações e consultorias, além de landing pages. Projetamos sistemas escaláveis com tecnologia de ponta e foco total em performance.",
+      "A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais.",
     type: "website",
     url: "https://stratus.dev.br",
     siteName: "Stratus",
@@ -75,19 +75,19 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    site: "@stratus_tech",
-    creator: "@stratus_tech",
-    images: [
-      {
-        url: "./stratus.svg",
-        width: 4320,
-        height: 896,
-        alt: "Stratus | Soluções Digitais",
-      },
-    ],
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   site: "@stratus.dev.br",
+  //   creator: "@stratus.dev.br",
+  //   images: [
+  //     {
+  //       url: "./stratus.svg",
+  //       width: 4320,
+  //       height: 896,
+  //       alt: "Stratus | Soluções Digitais",
+  //     },
+  //   ],
+  // },
   icons: {
     icon: "/icone.svg",
     shortcut: "/icone.svg",
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  // manifest: "/site.webmanifest",
+  manifest: "/site.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
@@ -127,7 +127,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://stratus.dev.br",
     languages: {
-      // "en-US": "https://stratus.dev.br/en",
       "pt-BR": "https://stratus.dev.br",
     },
   },
@@ -139,23 +138,86 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Stratus | Soluções Digitais - Backend, Integrações, Automações</title>
-        <meta name="description" content="A Stratus entrega soluções rápidas e confiáveis em backend, integrações, automações e consultorias, além de landing pages. Projetamos sistemas escaláveis com tecnologia de ponta e foco total em performance." />
-        <meta name="author" content="Stratus" />
-        <meta name="keywords" content="landing page, desenvolvimento backend, integrações de sistemas, automações inteligentes, consultoria em tecnologia, projetos com IA, sistemas legados, soluções digitais sob medida" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Stratus" />
+        <title>Stratus | Desenvolvimento e IA</title>
+        <meta name="description" content="A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais." />
+        <meta name="author" content="Stratus Soluções Digitais" />
+        <meta name="keywords" content="IA, inteligência artificial, landing page, landing pages, site, website, desenvolvimento web, frontend, react, next.js, interfaces responsivas, UI/UX, desenvolvimento backend, integrações de sistemas, automações inteligentes, consultoria em tecnologia, projetos com IA, sistemas legados, soluções digitais sob medida" />
+        <meta name="creator" content="Stratus Soluções Digitais" />
+        <meta name="publisher" content="Stratus Soluções Digitais" />
+        <meta name="application-name" content="Stratus" />
 
-        <meta property="og:title" content="Stratus | Soluções Digitais" />
-        <meta property="og:description" content="A Stratus entrega soluções rápidas e confiáveis em backend, integrações, automações e consultorias, além de landing pages. Projetamos sistemas escaláveis com tecnologia de ponta e foco total em performance." />
+        {/* Open Graph */}
+        <meta property="og:title" content="Stratus | Desenvolvimento e IA" />
+        <meta property="og:description" content="A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stratus.dev.br" />
+        <meta property="og:site_name" content="Stratus" />
         <meta property="og:image" content="./stratus.svg" />
+        <meta property="og:image:width" content="4320" />
+        <meta property="og:image:height" content="896" />
+        <meta property="og:image:alt" content="Stratus | Desenvolvimento e IA" />
+        <meta property="og:locale" content="pt_BR" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@stratus_tech" />
-        <meta name="twitter:image" content="https://stratus.dev.br/stratus.svg" />
+        {/* Twitter (ainda não criado) */}
+        {/* <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@stratus.dev.br" />
+        <meta name="twitter:creator" content="@stratus.dev.br" />
+        <meta name="twitter:image" content="./stratus.svg" />
+        <meta name="twitter:image:width" content="4320" />
+        <meta name="twitter:image:height" content="896" />
+        <meta name="twitter:image:alt" content="Stratus | Desenvolvimento Web e IA" /> */}
+
+        {/* Icons */}
+        <link rel="icon" href="/icone.svg" />
+        <link rel="shortcut icon" href="/icone.svg" />
+        <link rel="apple-touch-icon" href="/icone.svg.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* Format Detection */}
+        <meta name="format-detection" content="telephone=yes,address=yes,email=yes" />
+        <meta name="robots" content="index,follow" />
+
+        {/* Canonical and Language */}
+        <link rel="canonical" href="https://stratus.dev.br" />
+        <link rel="alternate" hrefLang="pt-BR" href="https://stratus.dev.br" />
+
+        {/* JSON-LD Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Stratus Soluções Digitais",
+              "url": "https://stratus.dev.br",
+              "logo": "https://stratus.dev.br/icone.svg",
+              "description": "A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais.",
+              "sameAs": [
+                // "https://www.linkedin.com/company/stratus-solues-digitais",
+                "https://www.instagram.com/stratus.dev.br"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "BR"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "areaServed": "BR"
+              }
+            })
+          }}
+        />
       </head>
       <body className={`${stoner.variable} font-sans antialiased`}>
         <Toaster />

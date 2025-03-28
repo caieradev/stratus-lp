@@ -15,17 +15,17 @@ const Hero = () => {
       <div className="container-narrow relative z-10 px-6 py-12 md:py-24">
         <div className="flex flex-col items-center text-center gap-8">
           <div className="inline-block mb-4 px-4 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
-            <span className="text-sm font-medium text-secondary">Soluções tecnológicas sob medida</span>
+            <span className="text-lg font-medium text-secondary">Soluções tecnológicas sob medida</span>
           </div>
           
           <h1 className="font-bold leading-tight max-w-4xl">
             <span className="block">Transforme seu negócio com</span>
-            <span className="gradient-text">backend e integrações de alto desempenho</span>
+            <span className="gradient-text">IA, interfaces modernas e backends robustos</span>
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl">
-            Soluções digitais ágeis e confiáveis para projetos de todos os tamanhos.
-            Expertise técnica para impulsionar sua empresa com velocidade e inovação.
+            Soluções completas que combinam IA, design moderno e tecnologia avançada.
+            Do frontend ao backend, entregamos experiências digitais inteligentes e excepcionais.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-4">

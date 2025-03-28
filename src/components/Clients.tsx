@@ -98,6 +98,7 @@ const Clients = () => {
           {/* Navigation buttons */}
           <Button
             variant="outline"
+            aria-label="Slide anterior"
             size="icon"
             className="absolute -left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm border-white/10 hover:bg-white/10 z-10"
             onClick={prevSlide}
@@ -108,6 +109,7 @@ const Clients = () => {
           
           <Button
             variant="outline"
+            aria-label="Slide seguinte"
             size="icon"
             className="absolute -right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm border-white/10 hover:bg-white/10 z-10"
             onClick={nextSlide}

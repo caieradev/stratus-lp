@@ -22,9 +22,10 @@ const AboutUs = () => {
             </h2>
             
             <p className="text-foreground/80 mb-8">
-              Somos uma empresa especializada em desenvolvimento backend, integrações 
-              e automações inteligentes. Nossa abordagem combina expertise técnica com 
-              entendimento de negócios para entregar soluções que realmente importam.
+              Somos uma empresa especializada em desenvolvimento web completo, desde interfaces 
+              modernas e responsivas até backends robustos e integrações. Nossa abordagem 
+              combina expertise técnica com entendimento de negócios para entregar soluções 
+              que realmente importam.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -33,7 +34,7 @@ const AboutUs = () => {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Missão</h4>
                   <p className="text-foreground/70">
-                    Levar tecnologia de forma ágil e realista a projetos de todos os tamanhos
+                    Criar experiências digitais excepcionais que impulsionam o sucesso dos nossos clientes
                   </p>
                 </div>
               </div>
@@ -43,7 +44,7 @@ const AboutUs = () => {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Visão</h4>
                   <p className="text-foreground/70">
-                    Ser referência em backend e automações no Brasil
+                    Ser referência em desenvolvimento no Brasil
                   </p>
                 </div>
               </div>
@@ -66,8 +67,8 @@ const AboutUs = () => {
                 src="/notebook.jpeg" 
                 alt="Desenvolvimento tecnológico" 
                 className="w-full h-full object-cover rounded-lg"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
               />
               
               {/* Stats overlay */}
