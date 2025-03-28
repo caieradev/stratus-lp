@@ -1,6 +1,6 @@
 'use client';
 
-import { Code, Database, Link, Settings, FileSearch, BarChart3, Workflow, ArrowRight, Bot } from "lucide-react";
+import { Code, Database, Link, Settings, FileSearch, ArrowRight, Bot } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [

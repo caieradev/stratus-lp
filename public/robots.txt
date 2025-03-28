@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://stratus.dev.br
+
+# Sitemaps
+Sitemap: https://stratus.dev.br/sitemap.xml
+Sitemap: https://stratus.dev.br/server-sitemap.xml
