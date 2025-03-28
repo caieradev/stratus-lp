@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-
+import Image from "next/image";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,10 +30,12 @@ const Navbar = () => {
     >
       <div className="container-narrow py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <img 
-            src="./stratus.svg" 
+          <Image 
+            src="/stratus.svg" 
             alt="Stratus Logo" 
             className="h-10"
+            width={100}
+            height={100}
           />
         </a>
 

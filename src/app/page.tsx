@@ -6,7 +6,6 @@ import Services from "@/components/Services";
 import AboutUs from "@/components/AboutUs";
 import Clients from "@/components/Clients";
 import FAQ from "@/components/FAQ";
-import Newsletter from "@/components/Newsletter";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 

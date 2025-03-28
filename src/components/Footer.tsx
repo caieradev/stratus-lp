@@ -1,6 +1,7 @@
 'use client';
 
-import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,10 +13,12 @@ const Footer = () => {
           {/* Company info */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img 
-                src="./stratus.svg" 
+              <Image 
+                src="/stratus.svg" 
                 alt="Stratus Logo" 
                 className="h-8"
+                width={100}
+                height={100}
               />
             </div>
             

@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
+import Image from "next/image";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 bg-gradient-dark overflow-hidden relative pb-16 md:pb-0">
@@ -52,10 +52,12 @@ const Hero = () => {
         <div className="mt-16 md:mt-24 relative">
           <div className="glass-card rounded-xl p-4 md:p-8 border-white/5 overflow-hidden">
             <div className="relative aspect-video rounded-lg overflow-hidden">
-              <img 
-                src="./code.jpeg" 
+              <Image 
+                src="/code.jpeg" 
                 alt="Código de programação em um monitor" 
                 className="w-full h-full object-cover object-center"
+                width={100}
+                height={100}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4">

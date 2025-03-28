@@ -1,17 +1,38 @@
 import type { Metadata, Viewport } from "next";
 import React from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const stoner = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Stoner Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Stoner Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Stoner Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Stoner Heavy.ttf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/Stoner Extra Bold.ttf',
+      weight: '900',
+      style: 'normal',
+    }
+  ],
+  variable: '--font-stoner',
 });
 
 export const viewport: Viewport = {
@@ -135,10 +156,8 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@stratus_tech" />
         <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-        
-        
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${stoner.variable} font-sans antialiased`}>
         <Toaster />
         {children}
       </body>

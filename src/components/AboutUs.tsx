@@ -1,6 +1,7 @@
 'use client';
 
 import { CheckCircle } from "lucide-react";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -61,24 +62,26 @@ const AboutUs = () => {
           
           <div className="relative">
             <div className="glass-card rounded-xl overflow-hidden">
-              <img 
-                src="./notebook.jpeg" 
+              <Image 
+                src="/notebook.jpeg" 
                 alt="Desenvolvimento tecnológico" 
                 className="w-full h-full object-cover rounded-lg"
+                width={100}
+                height={100}
               />
               
               {/* Stats overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background to-transparent">
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background to-transparent ">
                 <div className="grid grid-cols-3 gap-4">
-                  <div className="text-center bg-black/50 rounded-lg p-4">
+                  <div className="text-center rounded-lg p-4">
                     <div className="text-2xl md:text-3xl font-bold text-secondary">100%</div>
                     <div className="text-sm text-foreground/70">Projetos entregues</div>
                   </div>
-                  <div className="text-center bg-black/50 rounded-lg p-4">
+                  <div className="text-center rounded-lg p-4">
                     <div className="text-2xl md:text-3xl font-bold text-secondary">10+</div>
                     <div className="text-sm text-foreground/70">Clientes satisfeitos</div>
                   </div>
-                  <div className="text-center bg-black/50 rounded-lg p-4">
+                  <div className="text-center rounded-lg p-4">
                     <div className="text-2xl md:text-3xl font-bold text-secondary">24/7</div>
                     <div className="text-sm text-foreground/70">Suporte técnico</div>
                   </div>

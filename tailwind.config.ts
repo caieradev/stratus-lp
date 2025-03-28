@@ -68,7 +68,7 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Arial', 'sans-serif'],
+				sans: ['var(--font-stoner)', 'Arial', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

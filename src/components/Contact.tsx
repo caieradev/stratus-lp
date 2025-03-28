@@ -28,7 +28,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     axios.post('https://formsubmit.co/93677a9ebc7b3294f1a19350f6b8d8e5', formData)
-      .then(response => {
+      .then(() => {
         toast({
           title: "Mensagem enviada",
           description: "Entraremos em contato em breve!",
@@ -43,6 +43,7 @@ const Contact = () => {
           variant: "destructive",
         });
         setIsSubmitting(false);
+        console.error(error);
       });
     
     // Simulate form submission

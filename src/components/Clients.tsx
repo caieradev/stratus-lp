@@ -3,19 +3,20 @@
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 // Placeholder client logos
 const clientLogos = [
-  { name: "ADP", logo: "./empresas/adp.svg", url: "https://www.adp.com/" },
-  { name: "Unimed Brasil", logo: "./empresas/unimed.png", url: "https://unimed.coop.br/" },
-  { name: "TK Elevator", logo: "./empresas/tke.webp", url: "https://tkelevator.com/" },
-  { name: "Apps4Business", logo: "./empresas/apps4business.webp", url: "https://apps4business.com.br/" },
-  { name: "Athena Saúde", logo: "./empresas/athena.svg", url: "https://athenasaude.com.br/" },
-  { name: "Deak", logo: "./empresas/excel.png", url: "https://https://www.excelsuprimentos.com/" },
-  { name: "Deak", logo: "./empresas/deak.webp", url: "https://deak.com.br/" },
-  { name: "Nossa Saúde", logo: "./empresas/nossa-saude.svg", url: "https://www.nossasaude.com.br/" },
-  { name: "MDLife", logo: "./empresas/mdlife.webp", url: "https://www.instagram.com/mdlife.oficial/" },
-  { name: "Von Saltiel", logo: "./empresas/von-saltiel.png", url: "https://vonsaltiel.com.br/" },
+  { name: "ADP", logo: "/empresas/adp.svg", url: "https://www.adp.com/" },
+  { name: "Unimed Brasil", logo: "/empresas/unimed.png", url: "https://unimed.coop.br/" },
+  { name: "TK Elevator", logo: "/empresas/tke.webp", url: "https://tkelevator.com/" },
+  { name: "Apps4Business", logo: "/empresas/apps4business.webp", url: "https://apps4business.com.br/" },
+  { name: "Athena Saúde", logo: "/empresas/athena.svg", url: "https://athenasaude.com.br/" },
+  { name: "Deak", logo: "/empresas/excel.png", url: "https://https://www.excelsuprimentos.com/" },
+  { name: "Deak", logo: "/empresas/deak.webp", url: "https://deak.com.br/" },
+  { name: "Nossa Saúde", logo: "/empresas/nossa-saude.svg", url: "https://www.nossasaude.com.br/" },
+  { name: "MDLife", logo: "/empresas/mdlife.webp", url: "https://www.instagram.com/mdlife.oficial/" },
+  { name: "Von Saltiel", logo: "/empresas/von-saltiel.png", url: "https://vonsaltiel.com.br/" },
 ];
 
 const Clients = () => {
@@ -81,10 +82,12 @@ const Clients = () => {
                     href={client.url}
                     target="_blank"
                     className="glass-card h-32 rounded-lg flex items-center justify-center p-6 border border-white/5 hover:border-primary/30 transition-all duration-300">
-                    <img
+                    <Image
                       src={client.logo}
                       alt={client.name}
                       className="max-w-full max-h-full filter transition-all duration-300"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
