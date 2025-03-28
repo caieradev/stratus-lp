@@ -27,7 +27,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    axios.post('https://formsubmit.co/93677a9ebc7b3294f1a19350f6b8d8e5', formData)
+    axios.post('https://formspree.io/f/xyzedwwo', formData)
       .then(() => {
         toast({
           title: "Mensagem enviada",
