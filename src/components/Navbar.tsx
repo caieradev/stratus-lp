@@ -45,9 +45,6 @@ const Navbar = () => {
           <a href="#sobre" className="text-foreground/80 hover:text-primary transition-colors">
             Sobre
           </a>
-          <a href="#clientes" className="text-foreground/80 hover:text-primary transition-colors">
-            Clientes
-          </a>
           <a href="#faq" className="text-foreground/80 hover:text-primary transition-colors">
             FAQ
           </a>
@@ -83,13 +80,6 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Sobre
-            </a>
-            <a 
-              href="#clientes" 
-              className="text-foreground/80 hover:text-primary transition-colors py-2"
-              onClick={toggleMenu}
-            >
-              Clientes
             </a>
             <a 
               href="#faq" 

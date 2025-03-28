@@ -12,8 +12,8 @@ const AboutUs = () => {
       <div className="container-narrow relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-block mb-4 px-4 py-1 rounded-full bg-white/5 border border-white/10">
-              <span className="text-sm text-secondary">Sobre a Stratus</span>
+            <div className="inline-block mb-4 px-4 py-1 rounded-full bg-white/5 border border-white/10 mt-16">
+              <span className="text-xl text-secondary">Sobre a Stratus</span>
             </div>
             
             <h2 className="mb-6">

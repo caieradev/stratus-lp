@@ -42,7 +42,7 @@ return (
     <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
     
     <div className="container-narrow relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-16">
         <h2 className="mb-4">
             Perguntas <span className="gradient-text">Frequentes</span>
         </h2>

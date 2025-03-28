@@ -7,9 +7,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 // Placeholder client logos
 const clientLogos = [
   { name: "ADP", logo: "./empresas/adp.svg", url: "https://www.adp.com/" },
-  { name: "Apps4Business", logo: "./empresas/apps4business.webp", url: "https://apps4business.com.br/" },
   { name: "Unimed Brasil", logo: "./empresas/unimed.png", url: "https://unimed.coop.br/" },
   { name: "TK Elevator", logo: "./empresas/tke.webp", url: "https://tkelevator.com/" },
+  { name: "Apps4Business", logo: "./empresas/apps4business.webp", url: "https://apps4business.com.br/" },
   { name: "Athena Saúde", logo: "./empresas/athena.svg", url: "https://athenasaude.com.br/" },
   { name: "Deak", logo: "./empresas/excel.png", url: "https://https://www.excelsuprimentos.com/" },
   { name: "Deak", logo: "./empresas/deak.webp", url: "https://deak.com.br/" },
@@ -53,7 +53,7 @@ const Clients = () => {
   return (
     <section id="clientes" className="section bg-card">
       <div className="container-narrow">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-16">
           <h2 className="mb-4">
             Empresas que foram <span className="gradient-text">Impactadas por Nós</span>
           </h2>

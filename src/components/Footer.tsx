@@ -65,14 +65,6 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="#clientes" 
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Clientes
-                </a>
-              </li>
-              <li>
-                <a 
                   href="#faq" 
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
@@ -120,22 +112,13 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-foreground/60">
-            &copy; {currentYear} Stratus Soluções Digitais. Todos os direitos reservados. |  CNPJ 54.788.580/0001-52
+            &copy; {currentYear} Stratus Soluções Digitais. Todos os direitos reservados.
           </p>
           
           <div className="flex space-x-6">
-            <a 
-              href="#" 
-              className="text-sm text-foreground/60 hover:text-primary transition-colors"
-            >
-              Termos de Uso
-            </a>
-            <a 
-              href="#" 
-              className="text-sm text-foreground/60 hover:text-primary transition-colors"
-            >
-              Política de Privacidade
-            </a>
+            <p className="text-sm text-foreground/60">
+            CNPJ 54.788.580/0001-52
+            </p>
           </div>
         </div>
       </div>

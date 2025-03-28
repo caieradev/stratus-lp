@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Calendar, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import axios from "axios";
+import Newsletter from "./Newsletter";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -62,7 +63,7 @@ const Contact = () => {
       <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-secondary/10 rounded-full blur-3xl"></div>
       
       <div className="container-narrow relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-16">
           <h2 className="mb-4">
             Vamos <span className="gradient-text">Conversar</span>
           </h2>
@@ -195,6 +196,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <Newsletter />
       </div>
     </section>
   );

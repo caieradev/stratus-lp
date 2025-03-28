@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center pt-20 bg-gradient-dark overflow-hidden relative">
+    <section className="min-h-screen flex flex-col justify-center pt-20 bg-gradient-dark overflow-hidden relative pb-16 md:pb-0">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -60,7 +60,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4">
                 <p className="text-sm md:text-base font-medium text-secondary px-4 py-2">
-                  <span className="bg-black/50 rounded-full px-4 py-2">Códigos otimizados e arquitetura sólida para o seu negócio crescer</span>
+                  <span className="bg-black/50 rounded-full px-4 py-2">Auxiliando seu negócio a crescer</span>
                 </p>
               </div>
             </div>

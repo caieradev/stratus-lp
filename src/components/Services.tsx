@@ -53,7 +53,7 @@ const Services = () => {
     <section id="servicos" className="section bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="mb-4">
+          <h2 className="mb-4 mt-16">
             Nossos <span className="gradient-text">Serviços</span>
           </h2>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
