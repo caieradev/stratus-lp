@@ -86,8 +86,8 @@ const Clients = () => {
                       src={client.logo}
                       alt={client.name}
                       className="max-w-full max-h-full filter transition-all duration-300"
-                      width={100}
-                      height={100}
+                      width={1000}
+                      height={1000}
                     />
                   </a>
                 </div>

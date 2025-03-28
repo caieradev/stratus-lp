@@ -56,8 +56,8 @@ const Hero = () => {
                 src="/code.jpeg" 
                 alt="Código de programação em um monitor" 
                 className="w-full h-full object-cover object-center"
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4">
