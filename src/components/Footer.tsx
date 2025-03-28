@@ -17,8 +17,8 @@ const Footer = () => {
                 src="/stratus.svg" 
                 alt="Stratus Logo" 
                 className="h-8"
-                width={1000}
-                height={1000}
+                width={100}
+                height={100}
               />
             </div>
             

@@ -34,8 +34,8 @@ const Navbar = () => {
             src="/stratus.svg" 
             alt="Stratus Logo" 
             className="h-10"
-            width={1000}
-            height={1000}
+            width={150}
+            height={150}
           />
         </a>
 
