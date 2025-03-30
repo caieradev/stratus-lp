@@ -3,6 +3,7 @@ import React from "react";
 import localFont from 'next/font/local';
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react"
 
 const stoner = localFont({
   src: [
@@ -222,6 +223,7 @@ export default function RootLayout({
       <body className={`${stoner.variable} font-sans antialiased`}>
         <Toaster />
         {children}
+        <Analytics />
       </body>
     </html>
   );
