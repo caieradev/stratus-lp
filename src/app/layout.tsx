@@ -3,7 +3,8 @@ import React from "react";
 import localFont from 'next/font/local';
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const stoner = localFont({
   src: [
@@ -224,6 +225,7 @@ export default function RootLayout({
         <Toaster />
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
