@@ -150,7 +150,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Stratus" />
-        <title>Stratus | Desenvolvimento e IA</title>
+        <title>Stratus Soluçoes Digitais</title>
         <meta name="description" content="A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais." />
         <meta name="author" content="Stratus Soluções Digitais" />
         <meta name="keywords" content="IA, inteligência artificial, landing page, landing pages, site, website, desenvolvimento web, frontend, react, next.js, interfaces responsivas, UI/UX, desenvolvimento backend, integrações de sistemas, automações inteligentes, consultoria em tecnologia, projetos com IA, sistemas legados, soluções digitais sob medida" />
@@ -159,7 +159,7 @@ export default function RootLayout({
         <meta name="application-name" content="Stratus" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Stratus | Desenvolvimento e IA" />
+        <meta property="og:title" content="Stratus Soluçoes Digitais" />
         <meta property="og:description" content="A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stratus.dev.br" />
@@ -167,7 +167,7 @@ export default function RootLayout({
         <meta property="og:image" content="./stratus.svg" />
         <meta property="og:image:width" content="4320" />
         <meta property="og:image:height" content="896" />
-        <meta property="og:image:alt" content="Stratus | Desenvolvimento e IA" />
+        <meta property="og:image:alt" content="Stratus Soluçoes Digitais" />
         <meta property="og:locale" content="pt_BR" />
 
         {/* Twitter (ainda não criado) */}
@@ -182,7 +182,7 @@ export default function RootLayout({
         {/* Icons */}
         <link rel="icon" href="/icone.svg" />
         <link rel="shortcut icon" href="/icone.svg" />
-        <link rel="apple-touch-icon" href="/icone.svg.png" />
+        <link rel="apple-touch-icon" href="/icone.svg" />
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* Format Detection */}
@@ -202,7 +202,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Stratus Soluções Digitais",
               "url": "https://stratus.dev.br",
-              "logo": "https://stratus.dev.br/icone.svg",
+              "logo": "https://stratus.dev.br/stratus.svg",
               "description": "A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais.",
               "sameAs": [
                 // "https://www.linkedin.com/company/stratus-solues-digitais",
