@@ -5,6 +5,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const stoner = localFont({
   src: [
@@ -224,6 +225,7 @@ export default function RootLayout({
       <body className={`${stoner.variable} font-sans antialiased`}>
         <Toaster />
         {children}
+        <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
       </body>
