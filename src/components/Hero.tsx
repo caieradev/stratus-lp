@@ -4,9 +4,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslation } from "@/lib/i18n";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const scheduleUrl = buildWhatsAppUrl(t.whatsapp.scheduleMessage);
 
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 bg-gradient-dark overflow-hidden relative pb-16 md:pb-0">
@@ -35,7 +37,7 @@ const Hero = () => {
             <Button
               size="lg"
               className="text-base gap-2 bg-primary hover:bg-primary-hover"
-              onClick={() => window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank")}
+              onClick={() => window.open(scheduleUrl, "_blank")}
             >
               {t.hero.scheduleButton}
               <ArrowRight size={16} />

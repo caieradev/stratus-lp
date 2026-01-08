@@ -9,9 +9,11 @@ import { Calendar, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import axios from "axios";
 import Newsletter from "./Newsletter";
 import { useTranslation } from "@/lib/i18n";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const scheduleUrl = buildWhatsAppUrl(t.whatsapp.scheduleMessage);
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -128,7 +130,7 @@ const Contact = () => {
 
               <Button
                 className="w-full bg-primary hover:bg-primary-hover"
-                onClick={() => window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank")}
+                onClick={() => window.open(scheduleUrl, "_blank")}
               >
                 {t.contact.schedule.button}
                 <ArrowRight className="h-4 w-4 ml-2" />

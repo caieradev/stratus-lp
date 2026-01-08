@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslation } from "@/lib/i18n";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 // Placeholder client logos
 const clientLogos = [
@@ -25,6 +26,7 @@ const clientLogos = [
 
 const Clients = () => {
   const { t } = useTranslation();
+  const scheduleUrl = buildWhatsAppUrl(t.whatsapp.scheduleMessage);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const [itemsPerPage, setItemsPerPage] = useState(4);
@@ -129,7 +131,7 @@ const Clients = () => {
             {t.clients.cta.text}
           </p>
           <Button
-            onClick={() => window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank")}
+            onClick={() => window.open(scheduleUrl, "_blank")}
             className="bg-primary hover:bg-primary-hover"
           >
             {t.clients.cta.button}

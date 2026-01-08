@@ -164,6 +164,12 @@
       "button": "Schedule a Meeting"
     }
   },
+  "whatsapp": {
+    "defaultMessage": "Hi! I came from the website and would like to talk to Stratus.",
+    "scheduleMessage": "Hi! I'd like to schedule a meeting.",
+    "label": "Contact us",
+    "ariaLabel": "Contact us on WhatsApp"
+  },
   "newsletter": {
     "heading": "Stay updated with",
     "headingGradient": "the news",

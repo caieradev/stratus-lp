@@ -164,6 +164,12 @@
       "button": "Agende uma Reunião"
     }
   },
+  "whatsapp": {
+    "defaultMessage": "Olá! Vim pelo site e gostaria de conversar com a Stratus.",
+    "scheduleMessage": "Olá! Gostaria de agendar uma reunião.",
+    "label": "Fale conosco",
+    "ariaLabel": "Fale conosco pelo WhatsApp"
+  },
   "newsletter": {
     "heading": "Fique por dentro das",
     "headingGradient": "novidades",

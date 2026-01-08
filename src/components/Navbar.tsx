@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useTranslation } from "@/lib/i18n";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const { t } = useTranslation();
+  const scheduleUrl = buildWhatsAppUrl(t.whatsapp.scheduleMessage);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -61,7 +63,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-4">
           <LanguageSwitcher />
-          <Button onClick={() => window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank")}>
+          <Button onClick={() => window.open(scheduleUrl, "_blank")}>
             {t.nav.scheduleButton}
           </Button>
         </div>
@@ -109,7 +111,7 @@ const Navbar = () => {
               <Button
                 className="flex-1"
                 onClick={() => {
-                  window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank");
+                  window.open(scheduleUrl, "_blank");
                   toggleMenu();
                 }}
               >
