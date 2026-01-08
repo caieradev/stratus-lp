@@ -4,7 +4,11 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { useTranslation } from "@/lib/i18n";
+import LanguageSwitcher from "./LanguageSwitcher";
+
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -42,25 +46,28 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           <a href="#servicos" className="text-foreground/80 hover:text-primary transition-colors">
-            Serviços
+            {t.nav.services}
           </a>
           <a href="#sobre" className="text-foreground/80 hover:text-primary transition-colors">
-            Sobre
+            {t.nav.about}
           </a>
           <a href="#faq" className="text-foreground/80 hover:text-primary transition-colors">
-            FAQ
+            {t.nav.faq}
           </a>
           <a href="#contato" className="text-foreground/80 hover:text-primary transition-colors">
-            Contato
+            {t.nav.contact}
           </a>
         </nav>
 
-        <Button className="hidden md:flex" onClick={() => window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank")}>
-          Agendar Reunião
-        </Button>
+        <div className="hidden md:flex items-center gap-4">
+          <LanguageSwitcher />
+          <Button onClick={() => window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank")}>
+            {t.nav.scheduleButton}
+          </Button>
+        </div>
 
         {/* Mobile menu button */}
-        <button className="md:hidden text-foreground" aria-label="Abrir/Fechar Menu" onClick={toggleMenu}>
+        <button className="md:hidden text-foreground" aria-label={t.nav.menuLabel} onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -69,43 +76,46 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-lg shadow-lg">
           <nav className="container py-6 flex flex-col gap-4">
-            <a 
-              href="#servicos" 
+            <a
+              href="#servicos"
               className="text-foreground/80 hover:text-primary transition-colors py-2"
               onClick={toggleMenu}
             >
-              Serviços
+              {t.nav.services}
             </a>
-            <a 
-              href="#sobre" 
+            <a
+              href="#sobre"
               className="text-foreground/80 hover:text-primary transition-colors py-2"
               onClick={toggleMenu}
             >
-              Sobre
+              {t.nav.about}
             </a>
-            <a 
-              href="#faq" 
+            <a
+              href="#faq"
               className="text-foreground/80 hover:text-primary transition-colors py-2"
               onClick={toggleMenu}
             >
-              FAQ
+              {t.nav.faq}
             </a>
-            <a 
-              href="#contato" 
+            <a
+              href="#contato"
               className="text-foreground/80 hover:text-primary transition-colors py-2"
               onClick={toggleMenu}
             >
-              Contato
+              {t.nav.contact}
             </a>
-            <Button 
-              className="mt-2" 
-              onClick={() => {
-                window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank");
-                toggleMenu();
-              }}
-            >
-              Agendar Reunião
-            </Button>
+            <div className="flex gap-3 mt-2">
+              <LanguageSwitcher />
+              <Button
+                className="flex-1"
+                onClick={() => {
+                  window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank");
+                  toggleMenu();
+                }}
+              >
+                {t.nav.scheduleButton}
+              </Button>
+            </div>
           </nav>
         </div>
       )}

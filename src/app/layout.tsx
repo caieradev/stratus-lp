@@ -6,6 +6,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import DynamicMetadata from "@/components/DynamicMetadata";
+import { I18nProvider } from "@/lib/i18n";
+import { getInitialLocale } from "@/lib/i18n.server";
 
 const stoner = localFont({
   src: [
@@ -135,13 +138,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialLocale = await getInitialLocale();
+
   return (
-    <html lang="pt-BR">
+    <html lang={initialLocale}>
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
@@ -169,16 +174,10 @@ export default function RootLayout({
         <meta property="og:image:width" content="4320" />
         <meta property="og:image:height" content="896" />
         <meta property="og:image:alt" content="Stratus Soluçoes Digitais" />
-        <meta property="og:locale" content="pt_BR" />
-
-        {/* Twitter (ainda não criado) */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@stratus.dev.br" />
-        <meta name="twitter:creator" content="@stratus.dev.br" />
-        <meta name="twitter:image" content="./stratus.svg" />
-        <meta name="twitter:image:width" content="4320" />
-        <meta name="twitter:image:height" content="896" />
-        <meta name="twitter:image:alt" content="Stratus | Desenvolvimento Web e IA" /> */}
+        <meta
+          property="og:locale"
+          content={initialLocale === "pt-BR" ? "pt_BR" : "en_US"}
+        />
 
         {/* Icons */}
         <link rel="icon" href="/icone.svg" />
@@ -193,6 +192,7 @@ export default function RootLayout({
         {/* Canonical and Language */}
         <link rel="canonical" href="https://stratus.dev.br" />
         <link rel="alternate" hrefLang="pt-BR" href="https://stratus.dev.br" />
+        <link rel="alternate" hrefLang="en-US" href="https://stratus.dev.br" />
 
         {/* JSON-LD Schema */}
         <script
@@ -206,7 +206,6 @@ export default function RootLayout({
               "logo": "https://stratus.dev.br/stratus.svg",
               "description": "A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais.",
               "sameAs": [
-                // "https://www.linkedin.com/company/stratus-solues-digitais",
                 "https://www.instagram.com/stratus.dev.br"
               ],
               "address": {
@@ -223,11 +222,14 @@ export default function RootLayout({
         />
       </head>
       <body className={`${stoner.variable} font-sans antialiased`}>
-        <Toaster />
-        {children}
-        <WhatsAppButton />
-        <Analytics />
-        <SpeedInsights />
+        <I18nProvider initialLocale={initialLocale}>
+          <DynamicMetadata />
+          <Toaster />
+          {children}
+          <WhatsAppButton />
+          <Analytics />
+          <SpeedInsights />
+        </I18nProvider>
       </body>
     </html>
   );

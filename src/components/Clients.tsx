@@ -4,15 +4,19 @@ import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { useTranslation } from "@/lib/i18n";
 
 // Placeholder client logos
 const clientLogos = [
+  { name: "Honda Powersports", logo: "/empresas/honda.png", url: "https://powersports.honda.com/" },
   { name: "ADP", logo: "/empresas/adp.svg", url: "https://www.adp.com/" },
   { name: "Unimed Brasil", logo: "/empresas/unimed.png", url: "https://unimed.coop.br/" },
   { name: "TK Elevator", logo: "/empresas/tke.webp", url: "https://tkelevator.com/" },
   { name: "Apps4Business", logo: "/empresas/apps4business.webp", url: "https://apps4business.com.br/" },
   { name: "Athena Saúde", logo: "/empresas/athena.svg", url: "https://athenasaude.com.br/" },
-  { name: "Deak", logo: "/empresas/excel.png", url: "https://https://www.excelsuprimentos.com/" },
+  { name: "Kalahari Resorts", logo: "/empresas/kalahari-resorts.svg", url: "https://kalahariresorts.com/" },
+  { name: "Rice Lake", logo: "/empresas/ricelake.png", url: "https://www.ricelake.com/" },
+  { name: "Excel Suprimentos", logo: "/empresas/excel.png", url: "https://www.excelsuprimentos.com/" },
   { name: "Deak", logo: "/empresas/deak.webp", url: "https://deak.com.br/" },
   { name: "Nossa Saúde", logo: "/empresas/nossa-saude.svg", url: "https://www.nossasaude.com.br/" },
   { name: "MDLife", logo: "/empresas/mdlife.webp", url: "https://www.instagram.com/mdlife.oficial/" },
@@ -20,6 +24,7 @@ const clientLogos = [
 ];
 
 const Clients = () => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const [itemsPerPage, setItemsPerPage] = useState(4);
@@ -56,11 +61,11 @@ const Clients = () => {
       <div className="container-narrow">
         <div className="text-center mb-12 mt-16">
           <h2 className="mb-4">
-            Empresas que foram <span className="gradient-text">Impactadas por Nós</span>
+            {t.clients.heading}{" "}
+            <span className="gradient-text">{t.clients.headingGradient}</span>
           </h2>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-            Nossos colaboradores ja impactaram empresas de diversos setores, entregando soluções 
-            tecnológicas que impulsionam seus negócios.
+            {t.clients.description}
           </p>
         </div>
 
@@ -98,7 +103,7 @@ const Clients = () => {
           {/* Navigation buttons */}
           <Button
             variant="outline"
-            aria-label="Slide anterior"
+            aria-label={t.clients.carousel.prevLabel}
             size="icon"
             className="absolute -left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm border-white/10 hover:bg-white/10 z-10"
             onClick={prevSlide}
@@ -106,10 +111,10 @@ const Clients = () => {
           >
             <ChevronLeft className="h-4 w-4" />
           </Button>
-          
+
           <Button
             variant="outline"
-            aria-label="Slide seguinte"
+            aria-label={t.clients.carousel.nextLabel}
             size="icon"
             className="absolute -right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm border-white/10 hover:bg-white/10 z-10"
             onClick={nextSlide}
@@ -121,13 +126,13 @@ const Clients = () => {
 
         <div className="mt-16 text-center">
           <p className="text-foreground/70 mb-4">
-            Pronto para se juntar a essas empresas?
+            {t.clients.cta.text}
           </p>
-          <Button 
+          <Button
             onClick={() => window.open("https://stratussoluesdigitais.zohobookings.com/#/4735832000000047014", "_blank")}
             className="bg-primary hover:bg-primary-hover"
           >
-            Agende uma Reunião
+            {t.clients.cta.button}
           </Button>
         </div>
       </div>

@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "scheduleButton": "Schedule Meeting",
+    "menuLabel": "Open/Close Menu"
+  },
+  "hero": {
+    "badge": "Custom technology solutions",
+    "title": {
+      "line1": "Transform your business with",
+      "line2": "AI, modern interfaces, and robust backends"
+    },
+    "description": "Complete solutions combining AI, modern design, and advanced technology. From frontend to backend, we deliver intelligent and exceptional digital experiences.",
+    "scheduleButton": "Schedule a Meeting",
+    "servicesButton": "Explore Services",
+    "imageAlt": "Programming code on a monitor",
+    "imageCaption": "Helping your business grow"
+  },
+  "services": {
+    "heading": "Our",
+    "headingGradient": "Services",
+    "description": "We develop complete technology solutions focused on performance, scalability, and value for your business.",
+    "items": [
+      {
+        "title": "Artificial Intelligence",
+        "description": "We develop AI solutions to automate processes, analyze data, and create intelligent experiences",
+        "keywords": ["AI", "artificial intelligence", "machine learning", "intelligent automation", "data analysis"]
+      },
+      {
+        "title": "Frontend Development",
+        "description": "We create modern and responsive interfaces to boost your digital presence with cutting-edge technologies",
+        "keywords": ["landing page", "website", "UI/UX", "responsive interfaces", "dashboards"]
+      },
+      {
+        "title": "Custom Backend",
+        "description": "Customized development of servers, APIs, and services to meet specific needs",
+        "keywords": ["backend development", "cloud computing", "scalable systems", "performance", "API Gateway"]
+      },
+      {
+        "title": "Integrations & APIs",
+        "description": "Connect your systems and applications with efficient and secure integration solutions",
+        "keywords": ["system integrations", "REST API", "webhooks", "microservices"]
+      },
+      {
+        "title": "Process Automation",
+        "description": "Eliminate manual tasks and increase efficiency with automated and intelligent processes",
+        "keywords": ["intelligent automation", "RPA", "workflow automation", "continuous integration"]
+      },
+      {
+        "title": "Technical Consulting",
+        "description": "Analysis, diagnosis, and planning of technology solutions aligned with your business",
+        "keywords": ["technology consulting", "requirements gathering", "technical planning", "modernization"]
+      }
+    ],
+    "cta": {
+      "text": "Need something specific? Contact us to discuss your needs.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "badge": "About Stratus",
+    "heading": "Empowering businesses with",
+    "headingGradient": "cutting-edge technology",
+    "description": "We are a company specialized in full-stack web development, from modern and responsive interfaces to robust backends and integrations. Our approach combines technical expertise with business understanding to deliver solutions that truly matter.",
+    "mission": {
+      "title": "Mission",
+      "description": "Create exceptional digital experiences that drive our clients' success"
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To be a reference in development in Brazil"
+    },
+    "values": {
+      "title": "Values",
+      "description": "Innovation, commitment, and excellence"
+    },
+    "stats": {
+      "projects": "Projects delivered",
+      "clients": "Satisfied clients",
+      "support": "Technical support"
+    },
+    "imageAlt": "Technology development"
+  },
+  "faq": {
+    "heading": "Frequently Asked",
+    "headingGradient": "Questions",
+    "description": "Clear your doubts about how we can help your business with customized technology solutions.",
+    "items": [
+      {
+        "question": "How can Stratus help my company?",
+        "answer": "Stratus offers customized backend solutions, integrations, and automations to optimize your internal processes, improve communication between systems, and increase operational efficiency. Our services are tailored to your company's specific needs, regardless of size or sector."
+      },
+      {
+        "question": "How long does it take to develop a custom solution?",
+        "answer": "Development time varies according to project complexity. Simple integrations may take a few weeks, while more complex systems may require several months. We work with agile methodologies that allow incremental deliveries, ensuring you see results throughout the development process."
+      },
+      {
+        "question": "Do you work with legacy systems?",
+        "answer": "Yes, we have extensive experience in integrating and modernizing legacy systems. We understand the challenges of connecting old technologies with modern solutions and develop approaches that preserve your investment while implementing progressive improvements."
+      },
+      {
+        "question": "How does the consulting process work?",
+        "answer": "Our consulting begins with a detailed analysis of your current scenario, identifying challenges and opportunities. Next, we develop a strategic plan with technical and business recommendations. We can act only as consultants or also implement the recommended solutions, according to your preference."
+      },
+      {
+        "question": "Does Stratus offer support after implementation?",
+        "answer": "Yes, we offer different levels of post-implementation support, from basic monitoring and maintenance to 24/7 support for critical systems. Our goal is to ensure that implemented solutions continue to function perfectly and evolve according to your needs."
+      },
+      {
+        "question": "How does Stratus implement Artificial Intelligence projects?",
+        "answer": "We implement AI in a practical and results-oriented way, from intelligent automations to data analysis and predictions. We focus on use cases that bring real value to the business, integrating AI technologies with your existing systems and ensuring solutions are scalable and sustainable."
+      }
+    ],
+    "cta": {
+      "text": "Didn't find what you were looking for? Contact us directly.",
+      "button": "Contact Us"
+    }
+  },
+  "contact": {
+    "heading": "Let's",
+    "headingGradient": "Talk",
+    "description": "We're ready to discuss your project and how we can help turn your ideas into reality.",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "locationValue": "Porto Alegre, RS - Brazil"
+    },
+    "schedule": {
+      "title": "Schedule a Meeting",
+      "description": "Prefer to talk directly? Schedule an online meeting with our team to discuss your project.",
+      "button": "Schedule Meeting"
+    },
+    "form": {
+      "title": "Send a Message",
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "message": "Message",
+      "messagePlaceholder": "How can we help?",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "successTitle": "Message sent",
+      "successDescription": "We'll get in touch soon!",
+      "errorTitle": "Error sending message",
+      "errorDescription": "Please try again."
+    }
+  },
+  "clients": {
+    "heading": "Companies that were",
+    "headingGradient": "Impacted by Us",
+    "description": "Our team has already impacted companies across multiple industries, delivering technology solutions that drive their businesses forward.",
+    "carousel": {
+      "prevLabel": "Previous slide",
+      "nextLabel": "Next slide"
+    },
+    "cta": {
+      "text": "Ready to join these companies?",
+      "button": "Schedule a Meeting"
+    }
+  },
+  "newsletter": {
+    "heading": "Stay updated with",
+    "headingGradient": "the news",
+    "description": "Subscribe to receive exclusive content about technology, development, and market trends.",
+    "placeholder": "your.email@example.com",
+    "button": "Subscribe",
+    "submitting": "Subscribing...",
+    "disclaimer": "We promise not to spam. You can unsubscribe at any time.",
+    "notReadyTitle": "We haven't created our newsletter yet",
+    "notReadyDescription": "But you'll be able to subscribe to receive our news soon."
+  },
+  "footer": {
+    "description": "Elevating businesses with agile and reliable technology solutions. Specialists in backend, integrations, and automations for companies seeking innovation and efficiency.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "about": "About Us",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "contactTitle": "Contact",
+    "location": "Porto Alegre, RS - Brazil",
+    "rights": "Stratus Digital Solutions. All rights reserved."
+  },
+  "metadata": {
+    "title": "Stratus | Digital Solutions",
+    "description": "Stratus delivers complete solutions, from modern and responsive interfaces to robust backends. Specialists in consulting and development of Artificial Intelligence (AI), frontend, backend, integrations, and automations to create exceptional digital experiences.",
+    "keywords": "AI, artificial intelligence, landing page, landing pages, site, website, web development, frontend, react, next.js, responsive interfaces, UI/UX, backend development, system integrations, intelligent automation, technology consulting, AI projects, legacy systems, custom digital solutions"
+  }
+}

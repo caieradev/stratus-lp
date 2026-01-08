@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "services": "Serviços",
+    "about": "Sobre",
+    "faq": "FAQ",
+    "contact": "Contato",
+    "scheduleButton": "Agendar Reunião",
+    "menuLabel": "Abrir/Fechar Menu"
+  },
+  "hero": {
+    "badge": "Soluções tecnológicas sob medida",
+    "title": {
+      "line1": "Transforme seu negócio com",
+      "line2": "IA, interfaces modernas e backends robustos"
+    },
+    "description": "Soluções completas que combinam IA, design moderno e tecnologia avançada. Do frontend ao backend, entregamos experiências digitais inteligentes e excepcionais.",
+    "scheduleButton": "Agendar uma Reunião",
+    "servicesButton": "Conhecer Serviços",
+    "imageAlt": "Código de programação em um monitor",
+    "imageCaption": "Auxiliando seu negócio a crescer"
+  },
+  "services": {
+    "heading": "Nossos",
+    "headingGradient": "Serviços",
+    "description": "Desenvolvemos soluções tecnológicas completas, focadas em performance, escalabilidade e valor para o seu negócio.",
+    "items": [
+      {
+        "title": "Inteligência Artificial",
+        "description": "Desenvolvemos soluções com IA para automatizar processos, analisar dados e criar experiências inteligentes",
+        "keywords": ["IA", "inteligência artificial", "machine learning", "automação inteligente", "análise de dados"]
+      },
+      {
+        "title": "Desenvolvimento Frontend",
+        "description": "Criamos interfaces modernas e responsivas, para impulsionar sua presença digital com tecnologias de ponta",
+        "keywords": ["landing page", "website", "UI/UX", "interfaces responsivas", "dashboards"]
+      },
+      {
+        "title": "Backend sob Medida",
+        "description": "Desenvolvimento personalizado de servidores, APIs e serviços para atender necessidades específicas",
+        "keywords": ["desenvolvimento backend", "cloud computing", "sistemas escaláveis", "performance", "API Gateway"]
+      },
+      {
+        "title": "Integrações e APIs",
+        "description": "Conecte seus sistemas e aplicações com soluções de integração eficientes e seguras",
+        "keywords": ["integrações de sistemas", "API REST", "webhooks", "microserviços"]
+      },
+      {
+        "title": "Automações de Processos",
+        "description": "Elimine tarefas manuais e aumente a eficiência com processos automatizados e inteligentes",
+        "keywords": ["automações inteligentes", "RPA", "workflow automation", "integração contínua"]
+      },
+      {
+        "title": "Consultorias Técnicas",
+        "description": "Análise, diagnóstico e planejamento de soluções tecnológicas alinhadas ao seu negócio",
+        "keywords": ["consultoria em tecnologia", "levantamento de requisitos", "planejamento técnico", "modernização"]
+      }
+    ],
+    "cta": {
+      "text": "Precisa de algo específico? Entre em contato para conversarmos sobre suas necessidades.",
+      "button": "Fale Conosco"
+    }
+  },
+  "about": {
+    "badge": "Sobre a Stratus",
+    "heading": "Impulsionando negócios com",
+    "headingGradient": "tecnologia de ponta",
+    "description": "Somos uma empresa especializada em desenvolvimento web completo, desde interfaces modernas e responsivas até backends robustos e integrações. Nossa abordagem combina expertise técnica com entendimento de negócios para entregar soluções que realmente importam.",
+    "mission": {
+      "title": "Missão",
+      "description": "Criar experiências digitais excepcionais que impulsionam o sucesso dos nossos clientes"
+    },
+    "vision": {
+      "title": "Visão",
+      "description": "Ser referência em desenvolvimento no Brasil"
+    },
+    "values": {
+      "title": "Valores",
+      "description": "Inovação, comprometimento e excelência"
+    },
+    "stats": {
+      "projects": "Projetos entregues",
+      "clients": "Clientes satisfeitos",
+      "support": "Suporte técnico"
+    },
+    "imageAlt": "Desenvolvimento tecnológico"
+  },
+  "faq": {
+    "heading": "Perguntas",
+    "headingGradient": "Frequentes",
+    "description": "Tire suas dúvidas sobre como podemos ajudar seu negócio com soluções tecnológicas personalizadas.",
+    "items": [
+      {
+        "question": "Como a Stratus pode ajudar minha empresa?",
+        "answer": "A Stratus oferece soluções de backend, integrações e automações personalizadas para otimizar seus processos internos, melhorar a comunicação entre sistemas e aumentar a eficiência operacional. Nossos serviços são adaptados às necessidades específicas da sua empresa, independentemente do tamanho ou setor."
+      },
+      {
+        "question": "Quanto tempo leva para desenvolver uma solução personalizada?",
+        "answer": "O tempo de desenvolvimento varia conforme a complexidade do projeto. Integrações simples podem levar algumas semanas, enquanto sistemas mais complexos podem exigir alguns meses. Trabalhamos com metodologias ágeis que permitem entregas incrementais, garantindo que você veja resultados ao longo do processo de desenvolvimento."
+      },
+      {
+        "question": "Vocês trabalham com sistemas legados?",
+        "answer": "Sim, temos ampla experiência na integração e modernização de sistemas legados. Entendemos os desafios de conectar tecnologias antigas com soluções modernas e desenvolvemos abordagens que preservam seu investimento enquanto implementam melhorias progressivas."
+      },
+      {
+        "question": "Como funciona o processo de consultoria?",
+        "answer": "Nossa consultoria começa com uma análise detalhada do seu cenário atual, identificando desafios e oportunidades. Em seguida, desenvolvemos um plano estratégico com recomendações técnicas e de negócios. Podemos atuar apenas como consultores ou também implementar as soluções recomendadas, conforme sua preferência."
+      },
+      {
+        "question": "A Stratus oferece suporte após a implementação?",
+        "answer": "Sim, oferecemos diferentes níveis de suporte pós-implementação, desde monitoramento e manutenção básica até suporte 24/7 para sistemas críticos. Nosso objetivo é garantir que as soluções implementadas continuem funcionando perfeitamente e evoluam conforme suas necessidades."
+      },
+      {
+        "question": "Como a Stratus implementa projetos com Inteligência Artificial?",
+        "answer": "Implementamos IA de forma prática e orientada a resultados, desde automações inteligentes até análise de dados e previsões. Focamos em casos de uso que trazem valor real para o negócio, integrando tecnologias de IA com seus sistemas existentes e garantindo que as soluções sejam escaláveis e sustentáveis."
+      }
+    ],
+    "cta": {
+      "text": "Não encontrou o que procurava? Entre em contato diretamente.",
+      "button": "Fale Conosco"
+    }
+  },
+  "contact": {
+    "heading": "Vamos",
+    "headingGradient": "Conversar",
+    "description": "Estamos prontos para discutir seu projeto e como podemos ajudar a transformar suas ideias em realidade.",
+    "info": {
+      "title": "Informações de Contato",
+      "email": "Email",
+      "phone": "Telefone",
+      "location": "Localização",
+      "locationValue": "Porto Alegre, RS - Brasil"
+    },
+    "schedule": {
+      "title": "Agende uma Reunião",
+      "description": "Prefere conversar diretamente? Agende uma reunião online com nossa equipe para discutir seu projeto.",
+      "button": "Agendar Reunião"
+    },
+    "form": {
+      "title": "Envie uma Mensagem",
+      "name": "Nome Completo",
+      "namePlaceholder": "Seu nome",
+      "email": "Email",
+      "emailPlaceholder": "seu.email@exemplo.com",
+      "message": "Mensagem",
+      "messagePlaceholder": "Como podemos ajudar?",
+      "submit": "Enviar Mensagem",
+      "submitting": "Enviando...",
+      "successTitle": "Mensagem enviada",
+      "successDescription": "Entraremos em contato em breve!",
+      "errorTitle": "Erro ao enviar mensagem",
+      "errorDescription": "Tente novamente."
+    }
+  },
+  "clients": {
+    "heading": "Empresas que foram",
+    "headingGradient": "Impactadas por Nós",
+    "description": "Nossos colaboradores já impactaram empresas de diversos setores, entregando soluções tecnológicas que impulsionam seus negócios.",
+    "carousel": {
+      "prevLabel": "Slide anterior",
+      "nextLabel": "Slide seguinte"
+    },
+    "cta": {
+      "text": "Pronto para se juntar a essas empresas?",
+      "button": "Agende uma Reunião"
+    }
+  },
+  "newsletter": {
+    "heading": "Fique por dentro das",
+    "headingGradient": "novidades",
+    "description": "Inscreva-se para receber conteúdo exclusivo sobre tecnologia, desenvolvimento e tendências do mercado.",
+    "placeholder": "seu.email@exemplo.com",
+    "button": "Inscrever",
+    "submitting": "Inscrevendo...",
+    "disclaimer": "Prometemos não enviar spam. Você pode cancelar a inscrição a qualquer momento.",
+    "notReadyTitle": "Ainda não criamos nossa newsletter",
+    "notReadyDescription": "Mas você poderá se inscrever para receber nossas novidades em breve."
+  },
+  "footer": {
+    "description": "Elevando negócios com soluções tecnológicas ágeis e confiáveis. Especialistas em backend, integrações e automações para empresas que buscam inovação e eficiência.",
+    "quickLinks": "Links Rápidos",
+    "services": "Serviços",
+    "about": "Sobre Nós",
+    "faq": "FAQ",
+    "contact": "Contato",
+    "contactTitle": "Contato",
+    "location": "Porto Alegre, RS - Brasil",
+    "rights": "Stratus Soluções Digitais. Todos os direitos reservados."
+  },
+  "metadata": {
+    "title": "Stratus | Soluções Digitais",
+    "description": "A Stratus entrega soluções completas, desde interfaces modernas e responsivas até backends robustos. Especialistas em consultorias e desenvolvimento de Inteligência Artificial (IA), frontend, backend, integrações e automações para criar experiências digitais excepcionais.",
+    "keywords": "IA, inteligência artificial, landing page, landing pages, site, website, desenvolvimento web, frontend, react, next.js, interfaces responsivas, UI/UX, desenvolvimento backend, integrações de sistemas, automações inteligentes, consultoria em tecnologia, projetos com IA, sistemas legados, soluções digitais sob medida"
+  }
+}
