@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, createElement, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, createElement, useContext, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import type { Locale } from "./i18n-types";
 import { translations } from "./i18n-dictionary";
@@ -14,14 +14,6 @@ type I18nContextValue = {
 };
 
 const I18nContext = createContext<I18nContextValue | null>(null);
-
-function getStoredLocale(): Locale | null {
-  const stored = localStorage.getItem(LOCALE_COOKIE);
-  if (stored === "pt-BR" || stored === "en-US") {
-    return stored;
-  }
-  return null;
-}
 
 function persistLocale(locale: Locale) {
   localStorage.setItem(LOCALE_COOKIE, locale);
@@ -37,13 +29,6 @@ export function I18nProvider({
   children: ReactNode;
 }) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale);
-
-  useEffect(() => {
-    const storedLocale = getStoredLocale();
-    if (storedLocale && storedLocale !== locale) {
-      setLocaleState(storedLocale);
-    }
-  }, [locale]);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
